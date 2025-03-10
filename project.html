@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration Form</title>
+    <style>
+        .Watermark{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%)rotate(-20deg);
+            font-size:80px;
+            color:rgba(0,0,255,0.2);
+            font-weight: bold;
+            z-index:2;
+            white-space: nowrap;
+            pointer-events: none;
+
+        }
+        #h2{
+            text-align: center;
+            margin-top: 30px;
+            background-color: aqua;
+           
+        }
+      #div1{
+            text-align: center;
+            background-color: antiquewhite;
+            padding-right: 80px;
+            color: brown;
+           
+            
+        }
+        #div2{
+            text-align: center;
+            background-color: antiquewhite;
+            color: brown;
+        }
+        #div3{
+            text-align: center;
+            background-color: antiquewhite;
+            color: brown;
+        }
+        #div4{
+            
+            text-align: center;
+            background-color: antiquewhite;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+   
+    <form>
+        <div class="Watermark">Student Form</div>
+       
+        <marquee behavior="bottom"; direction="right">
+            <h1 id="h2">Student Registration Form</h1>
+        </marquee>
+       
+        <fieldset>
+            <legend>Student_details</legend>
+        <div id="div1">
+            
+        <label for="fname">First Name:</label>
+        <input type="text" required id="fname"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" required id="lname"><br><br>
+        <label for="phone">Phone no:</label>
+        <input type="text" required id="phone"><br><br>
+        <label for="email">Email id:</label>
+        <input type="email" required id="email"><br><br>
+        <label for="gen">Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="male">Female</label>
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="male">others</label>
+    </fieldset>
+    <fieldset>
+       <legend>Education_details</legend>
+       <div id="div2">
+        <label for="department">Department</label><br>
+        <label for="cs">Computer Science</label>
+        <input type="radio" id="cs" name="dept">
+        <label for="ec">electrical and communication</label>
+        <input type="radio" id="ec" name="dept">
+        <label for="mech">Mechanical engineering</label>
+        <input type="radio" id="mech" name="dept">
+        <label for="civil">Civil</label>
+        <input type="radio" id="civil" name="dept"><br><br>
+        <label >Year Of Graduation:</label>
+        <input list="YOG"><br><br>
+        <datalist id="YOG">
+            <option>2020</option>
+            <option>2021</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+        </datalist>
+       </div>
+       <div id="div3">
+       <label >Skills</label><br>
+       <input type="checkbox" id="java">
+       <label for="jv">Java</label>
+       <input type="checkbox" id="py">
+       <label for="py">python</label>
+       <input type="checkbox" id="c">
+       <label for="c">C</label>
+       <input type="checkbox" id="c++">
+       <label for="c++">C++</label>
+    </div>
+    </fieldset>
+    <fieldset>
+        <legend>Personal_details</legend>
+        <div id="div4">
+            <label for="mother">Mother name:</label>
+            <input type="text" required id="mother"><br><br>
+            <label for="father">Father name:</label>
+            <input type="text" required id="Father"><br><br>
+            <label for="phonr">phone number:</label>
+            <input type="text" required id="number"><br><br>
+            <label for="occ">Occupation of Mother:</label>
+            <input type="text" required id="occ"><br><br>
+            <label for="occ">Occupation of Father</label>
+            <input type="text" required id="occ"><br><br>
+            <button>SUBMIT</button>
+            
+        </div>
+    </fieldset>
+    </form>
+</div>
+    
+</body>
+</html>
